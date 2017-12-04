@@ -46,15 +46,6 @@ function createMessage(){
         ],
         date: 		notificationTime, 
         badge: 		notification_count++,
-});
-        
-        
-        
-        id: 		2,
-        title:      'The Madder Man',
-        text:       'You wanna Fight',
-        date: 		notificationTime, 
-        badge: 		notification_count++,
     }]);
 }
         	
