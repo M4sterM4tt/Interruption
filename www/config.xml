@@ -14,5 +14,6 @@
     <author href="http://www.worcester.ac.uk/discover/chris-bowers.html" email="c.bowers@worc.ac.uk">Chris P. Bowers</author>
 		
 	<!-- required plugins go here -->
-	     
+    <plugin name="cordova-plugin-dialogs"/>
+        
 </widget>

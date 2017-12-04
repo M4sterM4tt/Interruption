@@ -36,10 +36,10 @@ function createDialog() {
 	// here's a simple example
       
 	navigator.notification.confirm(
-    	'What do you think of this dialog?',  // message
-        dialogDismissed,         // callback
-        'An example dialog!',            // title
-        ['Awesome!', 'Sucks']                  // buttons
+    	'Are You Hungry?',  // message
+        dialogDismissed,  // callback
+        'The Classic',  // title
+        ['Yes, Give Me Food', 'No, But Give Me Some Food Anyway']  // buttons
     );
 
 }
