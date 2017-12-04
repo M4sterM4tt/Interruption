@@ -78,7 +78,7 @@ function dialogDismissed(buttonIndex) {
             badge: 		notification_count++
    	    });
         
-        cordova.plugins.notification.local.on("click", function createDialog())    
+        cordova.plugins.notification.local.on("click", function(){createDialog();});;   
     }
       
             
