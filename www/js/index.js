@@ -1,4 +1,6 @@
-var notification_count=0;
+
+var notification_count = 0;
+
 
 $(document).on('pageinit', function() {
 
@@ -17,7 +19,6 @@ $(document).on('pageinit', function() {
 
 
 });
-
 
 
 function createMessage(){
@@ -39,33 +40,28 @@ function createDialog() {
     	'Are You Hungry?',  // message
         dialogDismissed,  // callback
         'The Classic',  // title
-        ['Yes, Give Me Food', 'No, But Give Me Some Food Anyway']  // buttons
+        ['No, But Give Me Some Food Anyway', 'Yes, Give Me Food']  // buttons
     );
 
 }
         	
-        	
-        	
+           	
 function dialogDismissed(buttonIndex) {
 	
-	if(buttonIndex==1) new Toast({content: "You're easily pleased", duration: 3000});
-   	else if(buttonIndex==2) new Toast({content: 'It is rather boring.', duration: 3000});
+	if(buttonIndex==1) new Toast({content: "You know what? No.", duration: 3000});
+   	else if(buttonIndex==2) new Toast({content: 'Fine, but you must pay me back', duration: 3000});
 
 }
 
-   
-   
+     
 function createNotification() {
         		
-	//
     //generate a time to post notification
-    //
+    
     var currentTime = new Date().getTime(); //current time
-    var notificationTime = new Date(currentTime + 1000); //delayed time  - add 1 second
+    var notificationTime = new Date(currentTime + 1000); // delayed time  - add 1 second
     			
-    //
     //setup notification
-    //
     
     cordova.plugins.notification.local.schedule({ 
     	id: 		1,
