@@ -37,6 +37,19 @@ function createMessage(){
         badge: 		notification_count++,
     },
     {
+        id: 2,
+        title: 'Chat with Mad Man',
+        text: [
+            { message: 'Who are you?' },
+            { person: 'Mad Man', message: 'I am You, but Stronger!!!' },
+            { message: 'WutFace' }
+        ],
+        date: 		notificationTime, 
+        badge: 		notification_count++,
+});
+        
+        
+        
         id: 		2,
         title:      'The Madder Man',
         text:       'You wanna Fight',
@@ -66,7 +79,7 @@ function dialogDismissed(buttonIndex) {
         var notificationTime = new Date(currentTime + 3000); // delayed time  - add 1 second
     			
         cordova.plugins.notification.local.schedule({ 
-    	    id: 		'Yes_Notification',
+    	    id: 		3,
             title: 		"Actually, wanna get some Chips",
             message: 	"Here is your Food, You better pay me back",
             date: 		notificationTime, 
@@ -80,7 +93,7 @@ function dialogDismissed(buttonIndex) {
         var notificationTime = new Date(currentTime + 3000); // delayed time  - add 1 second
     			
         cordova.plugins.notification.local.schedule({ 
-    	    id: 		'No_Notification',
+    	    id: 		4,
             title: 		"Food",
             message: 	"Here is your Food, You better pay me back",
             date: 		notificationTime, 
@@ -103,7 +116,7 @@ function createNotification() {
     //setup notification
     
     cordova.plugins.notification.local.schedule({ 
-    	id: 		"Main_Notification",
+    	id: 		5,
         title: 		"Hey you",
         message: 	"It's Ya Boy!",
         date: 		notificationTime, 
