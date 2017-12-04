@@ -39,12 +39,10 @@ function createMessage(){
         text: 'You wanna Fight',
         date: 		notificationTime, 
         badge: 		notification_count++,
-        actions: {
-            id: 'Reply_Notification',
-            type: 'input',
-            title: 'Reply',
-            emptyText: 'Type message',
-        },
+        actions: [
+            { id: 'yes', title: 'Yes' },
+            { id: 'no',  title: 'No' }
+        ]
     });
 }
         	
