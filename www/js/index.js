@@ -16,13 +16,12 @@ $(document).on('pageinit', function() {
 	});
 
     
-    cordova.plugins.notification.local.on("click", test); 
+    cordova.plugins.notification.local.on("click", function() {
+		createDialog();
+    });
     
 });
 
-function test(){
-    alert ("Hi");
-}
 
 
 function createMessage(){
