@@ -35,7 +35,7 @@ function createMessage(){
         text:       'You wanna Fight',
         date: 		notificationTime, 
         badge: 		notification_count++,
-        action: [{createDialog()}]
+        createDialog()
     },
     {
         id: 2,
