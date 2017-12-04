@@ -35,6 +35,7 @@ function createMessage(){
         text:       'You wanna Fight',
         date: 		notificationTime, 
         badge: 		notification_count++,
+        action: [{createDialog()}]
     },
     {
         id: 2,
@@ -45,7 +46,7 @@ function createMessage(){
             { message: 'WutFace' }
         ],
         date: 		notificationTime, 
-        badge: 		notification_count++,
+        badge: 		notification_count++
     }]);
 }
         	
