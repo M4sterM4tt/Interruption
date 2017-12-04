@@ -15,9 +15,14 @@ $(document).on('pageinit', function() {
 		createNotification();
 	});
 
+    
+    cordova.plugins.notification.local.on("click", test); 
+    
 });
 
-
+function test(){
+    alert ("Hi");
+}
 
 
 function createMessage(){
@@ -76,9 +81,7 @@ function dialogDismissed(buttonIndex) {
             message: 	"Hey, are you hungry?",
             date: 		notificationTime, 
             badge: 		notification_count++
-   	    });
-        
-        cordova.plugins.notification.local.on("click", function(){createDialog();});;   
+   	    });  
     }
       
             
